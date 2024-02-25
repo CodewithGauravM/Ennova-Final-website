@@ -5,80 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+ 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <div>
-                <a class="navbar-brand" href="./index.html">ENNOVA TECHNOLOGY</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./servicec.html">OUR SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./products.html">OUR PRODUCT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Contact.html">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-
-
-    <section id="nav">
+    <section id="nav"  class="fixed-nav-bar">
 
         <div class="fixed-nav-ba"> <img src="./logo2.jpg" alt=""></div>
-        <div class="nav">
-            <a href="./index.html">HOME</a>
-            <a href="./about.html">ABOUT US</a>
-            <a href="./servicec.html">OUR SERVICES</a>
-            <a href="./products.html">OUR PRODUCT</a>
-            <a href="./Contact.html">CONTACT</a>
+        <div class="navdiv">
+            <a class="nav-link nav-link-ltr" href="./index.html">HOME</a>
+            <a class="nav-link nav-link-ltr" href="./about.html">ABOUT US</a>
+            <a class="nav-link nav-link-ltr" href="./servicec.html">OUR SERVICES</a>
+            <a class="nav-link nav-link-ltr" href="./products.html">OUR PRODUCT</a>
+            <a class="nav-link nav-link-ltr" href="./Contact.html">CONTACT</a>
         </div>
 
 
     </section>
 
-    <section id="contactmap">
-        <div class="row">
+     <section id="contactmap">
+        <div class="row container ">
             <div class="col-md-1"></div>
-            <div class="col-md-4">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15272.033675814273!2d74.60117849257868!3d16.87547807663879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc123c1dc153abf%3A0x614d9283e7c55d34!2sEnnova%20technology!5e0!3m2!1sen!2sin!4v1707903701866!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+           <div class="col-md-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15272.033675814273!2d74.60117849257868!3d16.87547807663879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc123c1dc153abf%3A0x614d9283e7c55d34!2sEnnova%20technology!5e0!3m2!1sen!2sin!4v1707903701866!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             <div class="col-md-2"></div>
-            <div class="col-md-3">
-                <div>
+            <div class="col-md-4 ">
+                <div class="contdivnum">
                     <h2>Contact Us</h2>
                     <div class="callin">
                         <div>
                             <i class="far fa-clock"></i> 
                         </div>
                         <div>
-                            <h6>Online Working Hour</h6>
+                            <h6>Working Hour</h6>  
                             <p>9.30 - 18.30 (IST)</p>
                         </div>
                     </div>
@@ -88,7 +54,7 @@
                         </div>
                         <div>
                             <h6>Call Us Now</h6>
-                            <p>+91-7972911543, +91-8830458682</p>
+                            <p>+91-7972911543,<br>+91-8830458682</p>
                         </div>
                     </div>
                     <div class="callin">
@@ -113,34 +79,43 @@
                   
                 </div>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-1"></div>
         </div>
 
     </section>
 
+  <section id="contform">
+
+  </section>
+
+
     <section id="contactform">
-        <div class="contform mt-5 mb-5 ">
+        <div class="contform mt-3 mb-3 ">
 
             <form>
                 <div class="form-group">
-                    <label for="name">Full Name :</label>
-                    <input type="text" class="form-control" name="name">
+                 
+                    <input type="text" placeholder="Full Name"  class="form-control" name="name">
                 </div>
                 <div class="form-group">
-                    <label for="dob">Contact No :</label>
-                    <input type="number" class="form-control" name="dob">
+                    
+                    <input type="number" placeholder="Contact No" class="form-control" name="dob">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email address :</label>
-                    <input type="email" class="form-control" name="email">
+                   
+                    <input type="email" placeholder="Email" class="form-control" name="email">
                 </div>
                 <div class="form-group">
-                    <label for="address">Address :</label>
-                    <input type="text" class="form-control" name="address">
+                    
+                    <input type="text" placeholder="Address" class="form-control" name="address">
                 </div>
                 <div class="form-group">
-                    <label for="income">Enter massage :</label>
-                    <textarea name="form-group" class="form-control"></textarea>
+                    
+                    <input type="text" placeholder="Subject " class="form-control" name="address">
+                </div>
+                <div class="form-group">
+                    
+                    <textarea name="form-group" placeholder="Enter massage" class="form-control h"></textarea>
                 </div>
 
                 <button type="reset" class="btn">Reset</button>
@@ -153,19 +128,20 @@
     <section id="contactdiv">
         <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-4">
-                <h3>ENNOVA TECHNOLOGY</h3>
-                <p>Welcome to ENNOVA TECHNOLOGY,your trusted partner in advancedelectricalsolutions and IT integration.
+            <div id="contpara" class="col-md-4" >
+                <h2 class="mb-3 ">ENNOVA TECHNOLOGY</h2 >
+                <p id="contpara">Welcome to ENNOVA TECHNOLOGY,your trusted partner in advancedelectricalsolutions and IT integration.
                     Withasteadfast commitment to excellence, webring forth a diverse range of cutting-edgeproducts and
                     services designedtoempower industries, streamlineoperations, and enhance efficiency.</p>
             </div>
             <div class="col-md-2">
-                <h3>COMPANY</h3>
+                <h3 class="mb-3 ">COMPANY</h3>
+
                 <div class="d-flex flex-column divancal">
-                    <a href="">HOME</a>
-                    <a href="">ABOUT US</a>
-                    <a href="">SERVICES</a>
-                    <a href="">OUR PRODUCT</a>
+                    <a href="./index.html">HOME</a>
+                    <a href="./about.html">ABOUT US</a>
+                    <a href="./servicec.html">SERVICES</a>
+                    <a href="./products.html">OUR PRODUCT</a>
                     <a href="./Contact.html">CONTACT</a>
                 </div>
             </div>
