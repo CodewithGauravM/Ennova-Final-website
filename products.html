@@ -15,42 +15,44 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class="">
 
+    <nav id="header" class="container-fluid  topnav d-flex align-items-center justify-content-between ">
 
-    <section id="nav"  class="fixed-nav-bar">
+        <div>
+            <img class="navimagediv1" src="./logo.jpg" alt="">
+            <img class="navimagediv2" src="./logo2.jpg" alt="">
+        </div>
 
-        <div> <img src="./logo2.jpg" alt=""></div>
-        <div class="navdiv">
+        <div class="d-flex " id="myTopnav">
             <a class="nav-link nav-link-ltr" href="./index.html">HOME</a>
             <a class="nav-link nav-link-ltr" href="./about.html">ABOUT US</a>
             <a class="nav-link nav-link-ltr" href="./servicec.html">OUR SERVICES</a>
             <a class="nav-link nav-link-ltr" href="./products.html">OUR PRODUCT</a>
             <a class="nav-link nav-link-ltr" href="./Contact.html">CONTACT</a>
         </div>
-
-
-    </section>
+        <i id="baricon" class="fa-solid fa-bars"></i>
+    </nav>
 
     <div class="upmargin">
         <h1 class="text-center mt-5 ">PRODUCTS</h1>
     </div>
-    <section id="servdiv">
-        <div class="upsevdiv bg-light ">
+    <section id="servdiv" class="container-fluid  bg-light">
+        <div class="upsevdiv container-fluid  ">
             <h2 class="text-center mt-4 pt-4 ">IOT Based Product</h2>
-            <div class="ro mb-5 pb-5">
+            <div class=" row ro mb-5 pb-5">
 
 
 
-                <div>
-                    <div class="co">
-                        <img class="" src="./IOT1/rodLight.png" alt="">
+                <div class="col-md-3 container ">
+                    <div class=" d-flex flex-column justify-content-between  co ">
+                        <img class="img-fluid" src="./IOT1/rodLight.png" alt="">
                         <h4>Smart StreetLight Controller</h4>
-                        <p>Our Smart Street Light
+                        <p class="">Our Smart Street Light
                             Controller is a game-changerin urban lighting management. Utilizing advanced sensors
                             and communication technologies, our system dynamically adjusts street lighting
                             basedon real time conditions. </p>
-                        <!-- Button trigger modal -->
+
                         <button type="button" class="btn bg-light" data-bs-toggle="modal"
                             data-bs-target="#exampleModal22222">
                             More info
@@ -71,7 +73,7 @@
                                 <div class="modal-body">
                                     <img class="h-50 w-100 " src="./IOT1/rodLight.png" alt="">
 
-                                    <p>Our Smart Street Light
+                                    <p class=" fs-5">Our Smart Street Light
                                         Controller is a game-changerin urban lighting management. Utilizing advanced
                                         sensors
                                         and communication technologies, our system dynamically adjusts street lighting
@@ -88,9 +90,10 @@
                     </div>
                 </div>
 
-                <div>
-                    <div class="co">
-                        <img class="" src="./IOT1/Energy.png" alt="">
+                <div class="col-md-3 ">
+
+                    <div class=" d-flex flex-column justify-content-between   co">
+                        <img class="img-fluid" src="./IOT1/Energy.png" alt="">
                         <h4>Energy Managment System</h4>
                         <p>Discover our Multi channel AC/DC relay cards, providingversatile
                             solutionsforefficientelectrical control. These cards offer multiple channels to meet the
@@ -100,7 +103,7 @@
                             data-bs-target="#exampleModal2">
                             More info
                         </button>
-                     
+
                     </div>
 
 
@@ -117,7 +120,7 @@
                                 <div class="modal-body">
                                     <img class=" w-100 " src="./IOT1/Energy.png" alt="">
 
-                                    <p>Discover our Multi channel AC/DC relay cards, providingversatile
+                                    <p class=" fs-5">Discover our Multi channel AC/DC relay cards, providingversatile
                                         solutionsforefficientelectrical control. These cards offer multiple channels to
                                         meet the
                                         diverse needs of your applications.</p>
@@ -132,9 +135,10 @@
                     </div>
                 </div>
 
-                <div>
-                    <div class="co">
-                        <img class=" " src="./IOT1/home.png" alt="">
+                <div class="col-md-3 ">
+
+                    <div class="  d-flex flex-column justify-content-between co">
+                        <img class="img-fluid" src="./IOT1/home.png" alt="">
                         <h4>Home Automation</h4>
 
                         <p>Our Home Automation solution sare engineered to seamlessly
@@ -163,7 +167,7 @@
                                     <img class="h-50 w-100 " src="./IOT1/home.png" alt="">
 
 
-                                    <p>Our Home Automation solution sare engineered to seamlessly
+                                    <p class=" fs-5">Our Home Automation solution sare engineered to seamlessly
                                         integrate technology into the modern home. From intelligent lighting and climate
                                         control to security system sandentertainment, our products and systems are
                                         designed
@@ -181,10 +185,11 @@
                     </div>
                 </div>
 
-                <div>
-                    <div class="co">
-                        <img class=" " src="./IOT1/greenHouse.png" alt="">
-                        <h4>Green House <br> Automation</h4>
+                <div class="col-md-3 ">
+
+                    <div class=" co d-flex flex-column justify-content-between ">
+                        <img class="img-fluid " src="./IOT1/greenHouse.png" alt="">
+                        <h4>Green House Automation</h4>
 
                         <p>We specialize ingreen house automation, integrating smart technologies
                             to optimize environmental conditions. Our solutions enhance management,
@@ -211,7 +216,8 @@
                                     <img class="  w-100" src="./IOT1/greenHouse.png" alt="">
 
 
-                                    <p>We specialize ingreen house automation, integrating smart technologies
+                                    <p class=" fs-5">We specialize ingreen house automation, integrating smart
+                                        technologies
                                         to optimize environmental conditions. Our solutions enhance management,
                                         ensuring efficient and sustainable green house operations.</p>
                                 </div>
@@ -224,27 +230,25 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
+            </div>
+        </div>
     </section>
+
+
 
 
     <section id="servdiv">
 
 
 
-        <div class="centersub">
+        <div class=" container-fluid ">
             <h2 class="text-center mt-5 ">INDUSTRIAL AUTOMATION PRODUCT </h2>
-            <div class="ro mb-5 ">
+            <div class="row  mb-5 ">
 
-
-                <div class="">
-                    <div class="coce">
-                        <img class="" src="./IORELAY/IO.png" alt="">
+                <div class="col-md-3"></div>
+                <div class="col-md-3 text-center ">
+                    <div class="midio d-flex flex-column ">
+                        <img class="container ioimghi" src="./IORELAY/IO.png" alt="">
                         <h4>IO Card</h4>
                         <p>Elevate your control systems with our Embedded System-Based IO Card, a cutting-edge
                             solution for
@@ -252,7 +256,7 @@
                             applications.
                         </p>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-secondary "  data-bs-toggle="modal"
+                        <button type="button" class="btn border" data-bs-toggle="modal"
                             data-bs-target="#exampleModal88">
                             More info
                         </button>
@@ -269,10 +273,11 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <img class="" src="./IORELAY/IO.png" alt="">
+                                <div class="modal-body  d-flex flex-column align-items-center ">
+                                    <img class="img-fluid " src="./IORELAY/IO.png" alt="">
 
-                                    <p>Elevate your control systems with our Embedded System-Based IO Card, a
+                                    <p class=" fs-5">Elevate your control systems with our Embedded System-Based IO
+                                        Card, a
                                         cutting-edge
                                         solution for
                                         seamless and efficient input/output integration, ensuring optimal performance in
@@ -292,9 +297,9 @@
 
 
 
-                <div class="">
-                    <div class="coce">
-                        <img class="" src="./IORELAY/RELAY.png" alt="">
+                <div class="col-md-3 ">
+                    <div class="midio d-flex flex-column text-center ">
+                        <img class="container ioimghi" src="./IORELAY/RELAY.png" alt="">
                         <h4>Relay Card</h4>
                         <p>Discover our Multichannel AC/DC relay cards at [Your Company Name], providing versatile
                             solutions
@@ -305,7 +310,7 @@
                             applications..
                         </p>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-secondary " data-bs-toggle="modal"
+                        <button type="button" class="btn border " data-bs-toggle="modal"
                             data-bs-target="#exampleModal6">
                             More info
                         </button>
@@ -322,10 +327,11 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <img class="" src="./IORELAY/RELAY.png" alt="">
+                                <div class="modal-body d-flex flex-column align-items-center ">
+                                    <img class="img-fluid " src="./IORELAY/RELAY.png" alt="">
 
-                                    <p>Discover our Multichannel AC/DC relay cards at [Your Company Name], providing
+                                    <p class=" fs-5">Discover our Multichannel AC/DC relay cards at [Your Company Name],
+                                        providing
                                         versatile
                                         solutions
                                         for
@@ -345,27 +351,35 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3"></div>
+
             </div>
         </div>
-
-
-
-
     </section>
 
 
 
 
 
-    <section id="panels" class="pb-5 mb-4  bg-light">
-        <h2 class="text-center mb-5 ">ELECTRICAL PANEL</h2>
-        <div class="ro mb-5 ">
 
-            <div class="coll">
-                <img src="./panel/PCC.png" alt="">
+
+
+
+
+
+
+
+
+
+    <section id="panels" class="container-fluid pt-3 pb-4 mb-5   bg-light">
+        <h2 class="text-center mb-5 mt-3 ">ELECTRICAL PANEL</h2>
+        <div class="row container-fluid  d-flex justify-content-evenly  ro mb-5 ">
+
+            <div class="coll col-md-4 mt-4  ">
+                <img class="img-fluid " src="./panel/PCC.png" alt="">
                 <h5>PCC Panel</h5>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn bg-light "  data-bs-toggle="modal" data-bs-target="#exampleModal11">
+                <button type="button" class="btn bg-primary  " data-bs-toggle="modal" data-bs-target="#exampleModal11">
                     more Info..
                 </button>
 
@@ -381,8 +395,8 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <ul>
+                                <div class="modal-body fs-5">
+                                    <ul class=" fs-5">
                                         <img src="./panel/PCC.png" alt="">
                                         <li>Our PCC panels are engineered for efficient and secure power distribution,
                                             incorporating
@@ -399,7 +413,7 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -410,17 +424,13 @@
 
 
 
+            <div class="coll col-md-4 mt-4 ">
 
-
-
-
-
-            <div class="coll">
-                <img src="./panel/MCC.png" alt="">
+                <img class="img-fluid " src="./panel/MCC.png" alt="">
                 <h4>MCC Panel
                 </h4>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn bg-light "  data-bs-toggle="modal" data-bs-target="#exampleModal12">
+                <button type="button" class="btn bg-light " data-bs-toggle="modal" data-bs-target="#exampleModal12">
                     more Info..
                 </button>
 
@@ -436,8 +446,8 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                <img src="./panel/MCC.png" alt="">
+                                <div class="modal-body fs-5">
+                                    <img src="./panel/MCC.png" alt="">
 
                                     <ul>
                                         <li>Our MCC panels facilitate
@@ -457,7 +467,7 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                     
+
                                 </div>
                             </div>
                         </div>
@@ -467,16 +477,12 @@
 
 
 
-
-
-
-
-            <div class="coll ">
-                <img src="./panel/PFD.png" alt="">
+            <div class="coll col-md-4 mt-4">
+                <img class="img-fluid " src="./panel/PFD.png" alt="">
                 <h4>VFD Panel
                 </h4>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn bg-light "  data-bs-toggle="modal" data-bs-target="#exampleModal13">
+                <button type="button" class="btn bg-light " data-bs-toggle="modal" data-bs-target="#exampleModal13">
                     more Info..
                 </button>
 
@@ -496,7 +502,7 @@
                                 <div class="modal-body">
                                     <img src="./panel/PFD.png" alt="">
 
-                                    <ul>
+                                    <ul class=" fs-5">
                                         <li>We provide state-of-the-art VFD solutions for precise motor speed control,
                                             resulting in reduced
                                             energy consumption and extended equipment lifespan.</li>
@@ -506,7 +512,7 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                     
+
                                 </div>
                             </div>
                         </div>
@@ -515,20 +521,12 @@
             </div>
 
 
-        </div>
 
-
-
-
-
-
-
-        <div class="ro ">
-            <div class="coll">
-                <img src="./panel/APFC.png" alt="">
+            <div class="col-md-4 mt-4   coll">
+                <img class="img-fluid " src="./panel/APFC.png" alt="">
                 <h4>APFC Panel</h4>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn bg-light "  data-bs-toggle="modal" data-bs-target="#exampleModal14">
+                <button type="button" class="btn bg-light " data-bs-toggle="modal" data-bs-target="#exampleModal14">
                     more Info..
                 </button>
 
@@ -548,7 +546,7 @@
                                 <div class="modal-body">
                                     <img src="./panel/APFC.png" alt="">
 
-                                    <ul>
+                                    <ul class=" fs-5">
                                         <li>Our APFC panels maintain power factor at optimal levels, contributing to
                                             energy savings and
                                             minimizing penalties.</li>
@@ -563,7 +561,7 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -572,17 +570,11 @@
             </div>
 
 
-
-
-
-
-
-
-            <div class="coll">
-                <img src="./panel/PLC.png" alt="">
+            <div class="col-md-4 mt-4  coll">
+                <img class="img-fluid " src="./panel/PLC.png" alt="">
                 <h4>PLC Panel</h4>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn bg-light "  data-bs-toggle="modal" data-bs-target="#exampleModal15">
+                <button type="button" class="btn bg-light " data-bs-toggle="modal" data-bs-target="#exampleModal15">
                     more Info..
                 </button>
 
@@ -602,7 +594,7 @@
                                 <div class="modal-body">
                                     <img src="./panel/PLC.png" alt="">
 
-                                    <ul>
+                                    <ul class=" fs-5">
                                         <li>Our PCC panels are engineered for efficient and secure power distribution,
                                             incorporating
                                             advanced
@@ -619,7 +611,7 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -628,17 +620,12 @@
             </div>
 
 
-
-
-
-
-
-            <div class="coll">
-                <img src="./solar_panel.png" alt="">
+            <div class="col-md-4 mt-4   coll">
+                <img class="img-fluid " src="./solar_panel.png" alt="">
 
                 <h4>Solar panel</h4>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn bg-light "  data-bs-toggle="modal" data-bs-target="#exampleModal16">
+                <button type="button" class="btn bg-light " data-bs-toggle="modal" data-bs-target="#exampleModal16">
                     more Info..
                 </button>
 
@@ -657,9 +644,12 @@
                                 </div>
                                 <div class="modal-body">
                                     <img src="./solar_panel.png" alt="">
-                                    <ul>
-                                        <li>Solar AC Distribution Board is the panel used between solar Inverter and Load to provide overload and short circuit protection. Normally these panels have one power input controlled by MCB, MCCB or Fuse multiple load feeders that use energy meter to live total load consumption.</li>
-                                        <li> our dp panel are Low maintenance costs and covered with high quality glass. </li>
+                                    <ul class=" fs-5">
+                                        <li> Normally these panels
+                                            have one power input controlled by MCB, MCCB or Fuse multiple load feeders
+                                            that use energy meter to live total load consumption.</li>
+                                        <li> our dp panel are Low maintenance costs and covered with high quality glass.
+                                        </li>
                                         <li>our solar panels are next-generation solar DB panels, manufactured by using
                                             premium quality A-grade
                                             DB cells. </li>
@@ -677,20 +667,25 @@
             </div>
         </div>
 
-
     </section>
+     
 
 
+ 
 
-    <section id="contactdiv">
-        <div class="row">
+
+    <section id="contactdiv" class=" ">
+        <div class="row ">
             <div class="col-md-1"></div>
             <div class="col-md-4">
-                <h2 class="mb-3 ">ENNOVA TECHNOLOGY</h2 >
-                <p>Welcome to ENNOVA TECHNOLOGY,your trusted partner in advancedelectricalsolutions and IT integration.
-                    Withasteadfast commitment to excellence, webring forth a diverse range of cutting-edgeproducts and
+                <h2 class="mb-3 ">ENNOVA TECHNOLOGY</h2>
+                <p>Welcome to ENNOVA TECHNOLOGY,your trusted partner in advanced electrical solutions and IT
+                    integration.
+                    With astead fast commitment to excellence, webring forth a diverse range of cutting-edgeproducts and
                     services designedtoempower industries, streamlineoperations, and enhance efficiency.</p>
             </div>
+            <div class="col-md-1"></div>
+
             <div class="col-md-2">
                 <h3 class="mb-3 ">COMPANY</h3>
                 <div class="d-flex flex-column divancal">
@@ -701,8 +696,7 @@
                     <a href="./Contact.html">CONTACT</a>
                 </div>
             </div>
-
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <p> <i class="far fa-clock"></i> 9.30 - 18.30 (IST)</p>
                 <p><i class="fas fa-phone"></i> +91-7972911543, +91-8830458682</p>
 
@@ -723,7 +717,7 @@
             <div class="col-md-1"></div>
         </div>
     </section>
-    <footer class="d-flex justify-content-center bg ">Copyright @2023 Proudly Crafted by Ennova Technology</footer>
+    <footer class="d-flex justify-content-center bg p-3 ">Copyright @2023 Proudly Crafted by Ennova Technology</footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
         integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
