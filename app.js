@@ -1,3 +1,19 @@
-jQuery(document).on('scroll', function(){
-    jQuery('h1').css("left", Math.max(100 - 0.2*window.scrollY, 1) + "vw");
-    })
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     document.getElementById("header").style.backgroundColor = "#131313";
+//   } else {
+//     document.getElementById("header").style.backgroundColor = "transparent";
+//   }
+// }
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbara") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbara";
+  }
+}
