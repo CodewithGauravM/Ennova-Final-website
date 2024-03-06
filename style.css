@@ -5,35 +5,37 @@
   position: relative;
 }
 
-body{
+body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 
-#header{
+#header {
   background-color: white;
   position: fixed;
   z-index: 99;
 }
 
-.navimagediv1{
+.navimagediv1 {
   height: 3rem;
   width: 4rem;
 }
-.navimagediv2{
+
+.navimagediv2 {
   height: 4rem;
   width: 9rem;
 }
-#header a{
+
+#header a {
   color: #434343;
   font-weight: bold;
   font-size: 1.2rem;
-  
+
 }
 
- 
+
 
 .nav-link {
   font-weight: bold;
@@ -69,7 +71,7 @@ body{
   width: 100%;
 }
 
- 
+
 .modeldivupmargin {
   margin-top: 5rem;
 }
@@ -98,10 +100,10 @@ body{
 
 
 #hero video {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   object-fit: cover;
- 
+
 }
 
 #fullscreen-video {
@@ -133,7 +135,7 @@ body{
 }
 
 .form-control {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .imgabout {
@@ -351,8 +353,8 @@ iframe {
   content: "";
   width: 100%;
   height: 100%;
-  
-  background: #adacac;
+
+  background: #889cb8;
   position: absolute;
   left: 0%;
   top: -98%;
@@ -380,7 +382,7 @@ iframe {
 
 }
 
-.advertisers-service-sec .service-card:hover h3{
+.advertisers-service-sec .service-card:hover h3 {
   color: #ffffff;
 }
 
@@ -390,7 +392,7 @@ iframe {
 //////////////////////////////////////
 ////////////////////////////// */
 
-.imghight{
+.imghight {
   height: 11rem;
 }
 
@@ -417,6 +419,7 @@ div.catCard {
   /* overflow: hidden; */
   border-radius: 1rem;
 }
+
 /* 
 div.lowerCatCard {
   position: absolute;
@@ -452,7 +455,7 @@ div.catCard:hover div.lowerCatCard {
   margin-top: 25px;
 } */
 
- 
+
 
 /* #catCardButton {
   position: absolute;
@@ -475,7 +478,7 @@ div.catCard:hover div.lowerCatCard {
 #choose {
   margin-top: 6rem;
   margin-bottom: 5rem;
-  height: 60vh;
+  /* height: 60vh; */
   background: url(https://images.pexels.com/photos/2506947/pexels-photo-2506947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: cover;
   background-position: center center;
@@ -570,15 +573,16 @@ div.catCard:hover div.lowerCatCard {
   /* width: 18rem; */
   border-radius: 0.5rem;
   border: #a2a0a0 solid 2px;
-   
+
   background-color: #ffffff;
   box-shadow: -7px 4px 28px -3px rgb(91, 91, 89);
 
 }
-.midio{
+
+.midio {
   border-radius: 0.5rem;
   border: #a2a0a0 solid 2px;
-   
+
   background-color: #ffffff;
   box-shadow: -7px 4px 28px -3px rgb(91, 91, 89);
 }
@@ -601,11 +605,12 @@ div.catCard:hover div.lowerCatCard {
 .coll {
   height: 18rem;
   width: 22rem;
+  margin: 0.6rem;
   border-radius: 0.5rem;
-padding-bottom: 1rem;
-  /* border: #c0bfbfcd solid 4px; */
+
+  padding: 0.5rem;
   text-align: center;
-  background-color: #c1c0c062;
+  background-color: #fff;
   box-shadow: -7px 4px 28px -3px rgb(91, 91, 89);
 }
 
@@ -632,11 +637,12 @@ padding-bottom: 1rem;
   margin-left: 5px;
 }
 
-.welcomediv{
+.welcomediv {
   height: 27rem;
   margin-bottom: 4rem;
 }
-.subwel{
+
+.subwel {
   height: 10rem;
 }
 
@@ -677,7 +683,7 @@ padding-bottom: 1rem;
   justify-content: space-evenly;
 }
 
-.bordermivi{
+.bordermivi {
   border-radius: 1rem;
 }
 
@@ -767,34 +773,38 @@ padding-bottom: 1rem;
 #baricon {
   display: none;
 }
-.shadodiv{
+
+.shadodiv {
   box-shadow: -7px 4px 28px -3px rgb(91, 91, 89);
 
 }
 
-#ourfocusdiv{
+#ourfocusdiv {
   height: 12rem;
 }
-#ourfocusdiv p{
+
+#ourfocusdiv p {
   font-size: 1.5rem;
 }
-#ourfocusdiv i{
- margin-right: 1rem;
- background-color: #031D44;
- color: white;
- padding: 1rem;
- border-radius: 50%;
- width: 3.5rem;
- 
+
+#ourfocusdiv i {
+  margin-right: 1rem;
+  background-color: #031D44;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 3.5rem;
+
 }
-.ioimghi{
+
+.ioimghi {
   height: 12rem;
 }
 
 
 
 @media screen and (max-width:426px) {
-  #header a {
+  /* #header a {
     display: none;
 
   }
@@ -803,13 +813,13 @@ padding-bottom: 1rem;
     display: flex !important;
     font-size: 2rem;
     padding-right: 1rem;
-    
+
   }
 
   #imgheading {
     margin: 0;
     margin-top: 2rem;
-  }
+  } */
 
   #About {
     padding: 1rem;
@@ -823,9 +833,9 @@ padding-bottom: 1rem;
   }
 
   #fullscreen-video {
-    width: 100vw;
-
-    height: 100vh;
+    /* width: 100vw; */
+    width: 100%;
+    height: 100%;
 
     object-fit: cover;
 
@@ -843,8 +853,10 @@ padding-bottom: 1rem;
   }
 
   #About img {
-    height: 12rem;
-    margin-left: 3rem;
+    height: 20rem;
+
+    /* margin-left: 3rem; */
+    margin-top: 4rem;
 
   }
 
@@ -883,7 +895,8 @@ padding-bottom: 1rem;
   .missionimg {
     height: 17rem;
     width: 19rem;
-    margin-left: 1.5rem;
+
+    /* margin-left: 1.5rem; */
     /* padding: 1rem; */
     /* width: 100%; */
 
@@ -942,11 +955,10 @@ padding-bottom: 1rem;
   }
 
   iframe {
-    margin-top: 5rem;
-    height: 15rem;
-    width: 22rem;
-    /* margin-left: 1rem; */
-    /* margin-top: 1rem; */
+  
+    height: 15rem !important;
+    width: 23rem !important;
+
   }
 
 
@@ -958,18 +970,15 @@ padding-bottom: 1rem;
     /* padding-right: 2rem; */
   }
 
-  #contactmap {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-  }
+ 
 
-  .row {
+  /* .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
     margin-left: calc(var(--bs-gutter-x) * 0);
-  }
+  } */
 
-  
+
   .coll {
     height: 16rem;
     width: 22rem;
@@ -987,10 +996,10 @@ padding-bottom: 1rem;
     padding: 5px;
   }
 
-  .misvisdiv {
+  /* .misvisdiv {
     padding-right: 4rem;
     padding-left: 4rem;
-  }
+  } */
 
   .row {
     --bs-gutter-x: 1.5rem !important;
@@ -1041,13 +1050,16 @@ padding-bottom: 1rem;
     align-items: center;
 
   }
-  .welcomediv{
+
+  .welcomediv {
     height: 44rem;
     margin-bottom: 4rem;
   }
-  #ourfocusdiv p{
+
+  #ourfocusdiv p {
     font-size: 1.2rem;
   }
+
   #contactdiv p {
     font-size: 1rem;
     /* text-align: justify; */
@@ -1055,38 +1067,94 @@ padding-bottom: 1rem;
 }
 
 
+@media screen and (max-width:769px) {
+  /* #About img {
+    height: 15rem;
+  } */
+  iframe {
+    height: 25rem;
+    width: 45rem;
+  }
 
+  .classcontact {
+    font-size: 1rem;
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  #header a {
+    display: none;
+
+  }
+
+  #header i {
+    display: flex !important;
+    font-size: 2rem;
+    padding-right: 1rem;
+
+  }
+
+  #imgheading {
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .missionimg {
+    display: none;
+  }
+  /* #contactdiv {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  } */
+}
 
 
 
 
 @media screen and (max-width:376px) {
   iframe {
-    margin-top: 5rem;
-    height: 15rem;
-    width: 19rem;
-    
+    /* margin-top: 5rem; */
+    height: 15rem !important;
+    width: 21rem !important;
+
   }
 
   form {
     min-width: 315px;
-    
-    height: 450px;
-    
 
+    height: 450px;
+
+
+  }
+}
+
+@media screen and (max-width:321px) {
+  iframe {
+    
+    height: 15rem !important;
+    width: 17rem !important;
+
+  }
+  #contactmap {
+     margin-bottom: 5rem;
+    
+  }
+  #contactmap div p{
+    font-size: 0.7em;
+  }
+  #imgheading h1{
+    font-size: 2.4rem !important;
   }
 }
 
 
 
 
-
-
-@media screen and (max-width:1025px) and (min-width:426px){
+@media screen and (max-width:1025px) and (min-width:769px) {
   iframe {
-   
     height: 25rem;
     width: 29rem;
-    
   }
+  
+
 }
