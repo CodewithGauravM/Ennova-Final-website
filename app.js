@@ -1,19 +1,10 @@
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.getElementById("header").style.backgroundColor = "#131313";
-//   } else {
-//     document.getElementById("header").style.backgroundColor = "transparent";
-//   }
-// }
+document.querySelector('.mobile').style.display = "none";
 
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "navbara") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbara";
-  }
+function handleMenu() {
+  document.querySelector('.mobile').style.display = "flex";
+}
+
+function handleClose(){
+  document.querySelector('.mobile').style.display = "none";
 }

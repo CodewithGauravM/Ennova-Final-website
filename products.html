@@ -12,46 +12,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body class="">
 
-    <nav id="header" class="container-fluid  topnav d-flex align-items-center justify-content-between ">
+    <nav id="header" class="topnav d-flex align-items-center justify-content-between container-fluid ">
 
         <div>
             <img class="navimagediv1" src="./logo.jpg" alt="">
-            <img class="navimagediv2" src="./logoe.png" alt="">
+            <!-- <img class="navimagediv2" src="./logoe.png" alt=""> -->
+            <a class="  nav-link-ltr" href="./index.html"><img class="navimagediv2" src="./logoe.png" alt=""></a>
+
         </div>
 
-        <div class="d-flex " id="myTopnav">
-            <a class="nav-link nav-link-ltr" href="./index.html">HOME</a>
+        <div class="d-flex navbara" id="myTopnav">
+            <!-- <a class="nav-link nav-link-ltr" href="./index.html">HOME</a> -->
             <a class="nav-link nav-link-ltr" href="./about.html">ABOUT US</a>
             <a class="nav-link nav-link-ltr" href="./servicec.html">OUR SERVICES</a>
             <a class="nav-link nav-link-ltr" href="./products.html">OUR PRODUCT</a>
             <a class="nav-link nav-link-ltr" href="./Contact.html">CONTACT</a>
+            <button class="fw-bold m-3 ">Call Now</button>
+
         </div>
-        <i id="baricon" class="fa-solid fa-bars"></i>
+
+        <i id="baricon" class="fa-solid fa-bars" onclick="handleMenu()"></i>
+
+        <div class="mobile">
+            <div class="d-flex justify-content-between ">
+                <img class="navimagediv2" src="./logoe.png" alt="">
+                <button class="fw-bold m-3 ">Call Now</button>
+
+            </div>
+            <div class="d-flex justify-content-end my-3 mx-2">
+                     <i class="fa fa-times-circle text-light fs-4" aria-hidden="true" onclick="handleClose()"></i>
+            </div>
+            <a class="nav-mobile nav-link-ltr" href="./index.html">HOME</a>
+            <a class="nav-mobile nav-link-ltr" href="./about.html">ABOUT US</a>
+            <a class="nav-mobile nav-link-ltr" href="./servicec.html">OUR SERVICES</a>
+            <a class="nav-mobile nav-link-ltr" href="./products.html">OUR PRODUCT</a>
+            <a class="nav-mobile nav-link-ltr" href="./Contact.html">CONTACT</a>
+
+        </div>
     </nav>
 
     <div class="upmargin">
-        <h1 class="text-center mt-5 ">PRODUCTS</h1>
+        <h1 class="text-center ">PRODUCTS</h1>
     </div>
+
     <section id="servdiv" class="container-fluid  bg-light">
         <div class="upsevdiv container-fluid  ">
-            <h2 class="text-center mt-4 pt-4 ">IOT Based Product</h2>
-            <div class=" row ro mb-5 pb-5">
+            <h2 class="text-center mb-4  mt-4 pt-4 ">IOT BASED PRODUCTS</h2>
+            <div class=" row ro  pb-5"  data-aos="zoom-in" data-aos-duration="2000">
 
 
 
                 <div class="col-lg-3 col-md-6 container ">
                     <div class=" d-flex flex-column justify-content-between  co ">
                         <img class="img-fluid" src="./IOT1/rodLight.png" alt="">
-                        <h4>Smart StreetLight Controller</h4>
-                        <p class="">Our Smart Street Light
-                            Controller is a game-changerin urban lighting management. Utilizing advanced sensors
+                        <h4>Smart Street Light Controller</h4>
+                        <p class="mb-0 ">Our Smart Street Light
+                            Controller is a game-changer in urban lighting management. Utilizing advanced sensors
                             and communication technologies, our system dynamically adjusts street lighting
-                            basedon real time conditions. </p>
+                            based on real time conditions. </p>
 
                         <button type="button" class="btn btn-primary " data-bs-toggle="modal"
                             data-bs-target="#exampleModal22222">
@@ -95,9 +119,7 @@
                     <div class=" d-flex flex-column justify-content-between   co">
                         <img class="img-fluid" src="./IOT1/Energy.png" alt="">
                         <h4>Energy Managment System</h4>
-                        <p>Discover our Multi channel AC/DC relay cards, providingversatile
-                            solutionsforefficientelectrical control. These cards offer multiple channels to meet the
-                            diverse needs of your applications.</p>
+                        <p class="mb-0 ">Explore the future of energy efficiency with our advanced Energy Management System, surpassing conventional monitoring with detailed data analysis and precise control capabilities. Harness insightful analytics to optimize energy consumption and make informed decisions.</p>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary modelbtndiv" data-bs-toggle="modal"
                             data-bs-target="#exampleModal2">
@@ -141,10 +163,10 @@
                         <img class="img-fluid" src="./IOT1/home.png" alt="">
                         <h4>Home Automation</h4>
 
-                        <p>Our Home Automation solution sare engineered to seamlessly
+                        <p class="mb-0 ">Our Home Automation solutions are engineered to seamlessly
                             integrate technology into the modern home. From intelligent lighting and climate
-                            control to security system sandentertainment, our products and systems are designed
-                            for easy operation and energy efficiency.</p>
+                            control to security systems and entertainment, our products and systems are designed
+                            for easy operation and energy efficiency.</p> 
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#exampleModal3">
@@ -191,7 +213,7 @@
                         <img class="img-fluid" src="./IOT1/greenHouse.png" alt="">
                         <h4>Green House Automation</h4>
 
-                        <p>We specialize ingreen house automation, integrating smart technologies
+                        <p>We specialize in green house automation, integrating smart technologies
                             to optimize environmental conditions. Our solutions enhance management,
                             ensuring efficient and sustainable green house operations.</p>
                         <!-- Button trigger modal -->
@@ -243,17 +265,16 @@
 
         <div class=" container-fluid ">
             <h2 class="text-center mt-5 ">INDUSTRIAL AUTOMATION PRODUCT </h2>
-            <div class="row  mb-5 ">
+            <div class="row  mb-5 "  data-aos="fade-down" data-aos-duration="2000">
 
                 <div class="col-lg-3"></div>
-                <div class="col-lg-3 col-md-6 text-center ">
+                <div class="col-lg-3 col-md-6 text-center  mt-3 iohight">
                     <div class="midio d-flex flex-column ">
                         <img class="container ioimghi" src="./IORELAY/IO.png" alt="">
                         <h4>IO Card</h4>
                         <p>Elevate your control systems with our Embedded System-Based IO Card, a cutting-edge
                             solution for
-                            seamless and efficient input/output integration, ensuring optimal performance in diverse <br>
-                            applications.
+                            seamless and efficient input/output integration, ensuring optimal performance in diverse applications.
                         </p>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn border btn-primary" data-bs-toggle="modal"
@@ -297,17 +318,13 @@
 
 
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 mt-3 iohight">
                     <div class="midio d-flex flex-column text-center ">
                         <img class="container ioimghi" src="./IORELAY/RELAY.png" alt="">
                         <h4>Relay Card</h4>
-                        <p>Discover our Multichannel AC/DC relay cards at [Your Company Name], providing versatile
-                            solutions
-                            for
-                            efficient electrical control. These cards offer multiple channels to meet the diverse
-                            needs of
-                            your
-                            applications.
+                        <p>Discover our Multichannel AC/DC relay cards at Ennova Technology, providing versatile
+                            solutions for efficient electrical control. These cards offer multiple channels to meet the diverse needs of
+                            your applications.
                         </p>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn border  btn-primary" data-bs-toggle="modal"
@@ -372,10 +389,10 @@
 
 
     <section id="panels" class="container-fluid pt-3 pb-4 mb-5   bg-light">
-        <h2 class="text-center mb-5 mt-3 ">ELECTRICAL PANEL</h2>
-        <div class="row container-fluid   container-fluid  d-flex justify-content-evenly  mb-5  ">
-            <!-- ro  container-fluid  d-flex justify-content-evenly  -->
-            <div class="coll col-md-4">
+        <h2 class="text-center mb-3 mt-3 ">ELECTRICAL PANEL</h2>
+        <div class="row  mb-5 d-flex justify-content-around "   data-aos="fade-up" data-aos-duration="2000">
+            
+            <div class="coll col-md-3">
                 <img class="img-fluid " src="./panel/PCC.png" alt="">
                 <h5>PCC Panel</h5>
                 <!-- Button trigger modal -->
@@ -424,7 +441,7 @@
 
 
 
-            <div class="coll col-md-4">
+            <div class="coll col-md-3">
 
                 <img class="img-fluid " src="./panel/MCC.png" alt="">
                 <h4>MCC Panel
@@ -477,7 +494,7 @@
 
 
 
-            <div class="coll  col-md-4">
+            <div class="coll  col-md-3">
                 <img class="img-fluid " src="./panel/PFD.png" alt="">
                 <h4>VFD Panel
                 </h4>
@@ -520,57 +537,9 @@
                 </div>
             </div>
 
+ 
 
-
-            <div class="col-md-4  coll">
-                <img class="img-fluid " src="./panel/APFC.png" alt="">
-                <h4>APFC Panel</h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal14">
-                    more Info..
-                </button>
-
-                <div>
-
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modeldivupmargin">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">APFC Panel</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="./panel/APFC.png" alt="">
-
-                                    <ul class=" fs-5">
-                                        <li>Our APFC panels maintain power factor at optimal levels, contributing to
-                                            energy savings and
-                                            minimizing penalties.</li>
-                                        <li>It accurately measures cycle to cycle reactive power requirement for
-                                            required capacitors are
-                                            connected to switching element / device installed in the system, so as
-                                            required capacitors are
-                                            connected / disconnected to the network.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-4  coll">
+            <div class="col-md-3  coll">
 
                 <img class="img-fluid " src="./panel/PLC.png" alt="">
                 <h4>PLC Panel</h4>
@@ -621,52 +590,7 @@
             </div>
 
 
-            <div class="col-md-4  coll">
-
-                <img class="img-fluid " src="./solar_panel.png" alt="">
-
-                <h4>Solar panel</h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal16">
-                    more Info..
-                </button>
-
-                <div>
-
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modeldivupmargin">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Solar panel</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="./solar_panel.png" alt="">
-                                    <ul class=" fs-5">
-                                        <li> Normally these panels
-                                            have one power input controlled by MCB, MCCB or Fuse multiple load feeders
-                                            that use energy meter to live total load consumption.</li>
-                                        <li> our dp panel are Low maintenance costs and covered with high quality glass.
-                                        </li>
-                                        <li>our solar panels are next-generation solar DB panels, manufactured by using
-                                            premium quality A-grade
-                                            DB cells. </li>
-                                    </ul>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
 
     </section>
@@ -674,21 +598,21 @@
 
 
  
-
     <section id="contactdiv" class="container-fluid ">
-        <div class="row  container-fluid  ">
+        <div class="row p-3 ">
             <div class="  col-lg-1"></div>
             <!-- <div class="col-md-1"></div> -->
             <div class="col-md-12 col-lg-4">
-                <h2 class="mb-3 ">ENNOVA TECHNOLOGY</h2>
-                <p>Welcome to ENNOVA TECHNOLOGY,your trusted partner in advancedelectricalsolutions and IT integration.
-                    Withasteadfast commitment to excellence, webring forth a diverse range of cutting-edgeproducts and
-                    services designedtoempower industries, streamlineoperations, and enhance efficiency.</p>
+                <h1 class="mb-3  ">ENNOVA TECHNOLOGY</h1>
+                <p>Welcome to ENNOVA TECHNOLOGY, your trusted partner in advanced electrical solutions and IT
+                    integration.
+                    Withastead fast commitment to excellence, webring forth a diverse range of cutting-edgeproducts and
+                    services designed to empower industries, streamline operations, and enhance efficiency.</p>
             </div>
             <!-- <div class="col-md-1"></div> -->
             <div class="  col-lg-1"></div>
             <div class="col-md-6 col-lg-2">
-                <h3 class="mb-3 ">COMPANY</h3>
+                <h3 class="mb-1  fw-bold ">COMPANY</h3>
                 <div class="d-flex flex-column divancal">
                     <a href="./index.html">HOME</a>
                     <a href="./about.html">ABOUT US</a>
@@ -698,7 +622,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <h3 class="mb-3">CONTACT INFORMATION</h3>
+                <h3 class="mb-1 fw-bold ">CONTACT INFORMATION</h3>
 
                 <p> <i class="far fa-clock"></i> 9.30 - 18.30 (IST)</p>
                 <p><i class="fas fa-phone"></i> +91-7972911543, +91-8830458682</p>
@@ -707,14 +631,18 @@
                     <p><i class="far fa-envelope"></i> purchase.ennovatech@gmail.com</p>
                     <p><i class="far fa-envelope"></i> devlopment.ennovatech@gmail.com</p>
                 </div>
-                <p><i class="fas fa-map-pin"></i> #Plot No.F45, Kupwad M.I.D.C, road, Near TCI Freight.
+                <p><i class="fas fa-map-pin"></i> #Plot No.F45, Kupwad M.I.D.C road, Near TCI Freight.
                     Kupwad, Dist.-Sangli, Maharashtra- 416436.</p>
                 <div id="iconssym">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fab fa-youtube-square"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-instagram-square"></i>
+                    <a href="https://www.facebook.com/profile.php?id=100063876886966"> <i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/EnnovaTech24"> <i class="fab fa-twitter-square"></i></a>
+                    <a href="https://youtube.com/@ennovatechnology1286?si=DltyPRZSHjJ3qHM1"> <i
+                            class="fab fa-youtube-square"></i></a>
+                    <a href="https://www.linkedin.com/company/ennova-technology/"> <i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/ennova_technology?igsh=MTVieXY2Y29jcDgwaA=="> <i
+                            class="fab fa-instagram-square"></i></a>
+
                 </div>
             </div>
             <!-- <div class="col-md-1"></div> -->
@@ -725,6 +653,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
         integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     <script src="./app.js"></script>
 </body>
 

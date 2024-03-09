@@ -18,21 +18,43 @@
 
 <body>
 
-    <nav id="header" class="topnav container-fluid  d-flex align-items-center justify-content-between ">
+    <nav id="header" class="topnav d-flex align-items-center justify-content-between container-fluid ">
 
         <div>
             <img class="navimagediv1" src="./logo.jpg" alt="">
-            <img class="navimagediv2" src="./logoe.png" alt="">
+            <!-- <img class="navimagediv2" src="./logoe.png" alt=""> -->
+            <a class="  nav-link-ltr" href="./index.html"><img class="navimagediv2" src="./logoe.png" alt=""></a>
+
         </div>
 
-        <div class="d-flex " id="myTopnav">
-            <a class="nav-link nav-link-ltr" href="./index.html">HOME</a>
+        <div class="d-flex navbara" id="myTopnav">
+            <!-- <a class="nav-link nav-link-ltr" href="./index.html">HOME</a> -->
             <a class="nav-link nav-link-ltr" href="./about.html">ABOUT US</a>
             <a class="nav-link nav-link-ltr" href="./servicec.html">OUR SERVICES</a>
             <a class="nav-link nav-link-ltr" href="./products.html">OUR PRODUCT</a>
             <a class="nav-link nav-link-ltr" href="./Contact.html">CONTACT</a>
+            <button class="fw-bold m-3 ">Call Now</button>
+
         </div>
-        <i id="baricon" class="fa-solid fa-bars"></i>
+
+        <i id="baricon" class="fa-solid fa-bars" onclick="handleMenu()"></i>
+
+        <div class="mobile">
+            <div class="d-flex justify-content-between ">
+                <img class="navimagediv2" src="./logoe.png" alt="">
+                <button class="fw-bold m-3 ">Call Now</button>
+
+            </div>
+            <div class="d-flex justify-content-end my-3 mx-2">
+                     <i class="fa fa-times-circle text-light fs-4" aria-hidden="true" onclick="handleClose()"></i>
+            </div>
+            <a class="nav-mobile nav-link-ltr" href="./index.html">HOME</a>
+            <a class="nav-mobile nav-link-ltr" href="./about.html">ABOUT US</a>
+            <a class="nav-mobile nav-link-ltr" href="./servicec.html">OUR SERVICES</a>
+            <a class="nav-mobile nav-link-ltr" href="./products.html">OUR PRODUCT</a>
+            <a class="nav-mobile nav-link-ltr" href="./Contact.html">CONTACT</a>
+
+        </div>
     </nav>
 
 
@@ -58,7 +80,7 @@
                             <a href="#"><img class="img-fluid imghight" src="./service/010.png" alt=""></a>
 
                         </div>
-                        <h3 class="fs-4 mt-3 ">WEB DESIGN & DEVELOPMENT</h3>
+                        <h3 class="fs-4 mt-3 fw-bold">WEB DESIGN & DEVELOPMENT</h3>
 
                         <p>Our team of seasoned developers crafts visually stunning and
                             user friendly websites,
@@ -71,7 +93,7 @@
                         <div class="icon-wrapper">
                             <a href="#"><img class="img-fluid imghight" src="./service/009.png" alt=""></a>
                         </div>
-                        <h3 class="fs-4 mt-3 ">SOFTWARE DEVELOPMENT</h3>
+                        <h3 class="fs-4 mt-3 fw-bold">SOFTWARE DEVELOPMENT</h3>
 
                         <p>We specializein customer-centric software development,
                             creating solutions tailored to your unique requirements. Elevate your business with our
@@ -84,7 +106,7 @@
                         <div class="icon-wrapper">
                             <a href="#"><img class="img-fluid imghight" src="./service/0007.png" alt=""></a>
                         </div>
-                        <h3 class="fs-4 mt-3 ">DATA ANALYTICS</h3>
+                        <h3 class="fs-4 mt-3 fw-bold">DATA ANALYTICS</h3>
 
                         <p>Harness the power of data with our advanced analytics solutions,
                             providing valuable insights to inform strategic business decisions.</p>
@@ -95,7 +117,7 @@
             </div>
             <div class="row mt-5 ">
                 <div class="section-header text-center">
-                    <h2 class="fw-bold  mt-5 ">
+                    <h2 class="fw-bold ">
                         IOT SOLUTION
                     </h2>
                     
@@ -108,7 +130,7 @@
                             <img class="img-fluid imghight" src="./IOT.jpg" alt=""></a>
 
                         </div>
-                        <h3 class="fs-4 mt-3 ">TAILOR-MADE IOT SOLUTION</h3>
+                        <h3 class="fs-4 mt-3 fw-bold">TAILOR-MADE IOT SOLUTION</h3>
 
                         <p>We specialize in providing tailor-made IoT solutions, customizing
                             connected technologies to
@@ -121,14 +143,14 @@
 
             <div class="row mt-5 ">
                 <div class="section-header text-center">
-                    <h2 class="fw-bold  mt-5 ">
+                    <h2 class="fw-bold ">
                         Electronics Based Product Development
                     </h2>
                      
                 </div>
             </div>
 
-            <div class="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center" >         
+            <div class="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center"  data-aos="fade-up" data-aos-duration="2500">         
                  <!-- data-aos="fade-left" -->
 
 
@@ -138,7 +160,7 @@
                             <a href="#"><img class="img-fluid imghight" src="./22222.jpg" alt=""></a>
 
                         </div>
-                        <h3 class="fs-4 mt-3 ">Customised Product Development</h3>
+                        <h3 class="fs-4 mt-3 fw-bold ">Customised Product Development</h3>
                         <p >We excel in bespoke electronics product development, creating
                             tailored solutions for your
                             unique requirements. Our expert team blends innovation and precision to deliver
@@ -156,7 +178,7 @@
                         <div class="icon-wrapper">
                             <a href="#"><img class="img-fluid imghight" src="./55555.jpg" alt=""></a>
                         </div>
-                        <h3 class="fs-4 mt-3 ">PCB Design </h3>
+                        <h3 class="fs-4 mt-3 fw-bold">PCB Design </h3>
                         <p >We offer expert custom PCB design services, tailoring solutions
                             to match your unique
                             electronic specifications. Our precision-driven approach ensures top-notch circuitry for
@@ -174,7 +196,7 @@
                         <div class="icon-wrapper">
                             <a href="#"><img class="img-fluid imghight" src="./33333.jpg" alt=""></a>
                         </div>
-                        <h3 class="fs-4 mt-3 ">Prototyping</h3>
+                        <h3 class="fs-4 mt-3 fw-bold">Prototyping</h3>
 
                         <p >We specialize in rapid and precise electronics product
                             prototyping, transforming concepts
@@ -200,19 +222,20 @@
 
 
     <section id="contactdiv" class="container-fluid ">
-        <div class="row  container-fluid  ">
+        <div class="row p-3 ">
             <div class="  col-lg-1"></div>
             <!-- <div class="col-md-1"></div> -->
             <div class="col-md-12 col-lg-4">
-                <h2 class="mb-3 ">ENNOVA TECHNOLOGY</h2>
-                <p>Welcome to ENNOVA TECHNOLOGY,your trusted partner in advancedelectricalsolutions and IT integration.
-                    Withasteadfast commitment to excellence, webring forth a diverse range of cutting-edgeproducts and
-                    services designedtoempower industries, streamlineoperations, and enhance efficiency.</p>
+                <h1 class="mb-3  ">ENNOVA TECHNOLOGY</h1>
+                <p>Welcome to ENNOVA TECHNOLOGY, your trusted partner in advanced electrical solutions and IT
+                    integration.
+                    Withastead fast commitment to excellence, webring forth a diverse range of cutting-edgeproducts and
+                    services designed to empower industries, streamline operations, and enhance efficiency.</p>
             </div>
             <!-- <div class="col-md-1"></div> -->
             <div class="  col-lg-1"></div>
             <div class="col-md-6 col-lg-2">
-                <h3 class="mb-3 ">COMPANY</h3>
+                <h3 class="mb-1  fw-bold ">COMPANY</h3>
                 <div class="d-flex flex-column divancal">
                     <a href="./index.html">HOME</a>
                     <a href="./about.html">ABOUT US</a>
@@ -222,7 +245,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <h3 class="mb-3">CONTACT INFORMATION</h3>
+                <h3 class="mb-1 fw-bold ">CONTACT INFORMATION</h3>
 
                 <p> <i class="far fa-clock"></i> 9.30 - 18.30 (IST)</p>
                 <p><i class="fas fa-phone"></i> +91-7972911543, +91-8830458682</p>
@@ -231,14 +254,18 @@
                     <p><i class="far fa-envelope"></i> purchase.ennovatech@gmail.com</p>
                     <p><i class="far fa-envelope"></i> devlopment.ennovatech@gmail.com</p>
                 </div>
-                <p><i class="fas fa-map-pin"></i> #Plot No.F45, Kupwad M.I.D.C, road, Near TCI Freight.
+                <p><i class="fas fa-map-pin"></i> #Plot No.F45, Kupwad M.I.D.C road, Near TCI Freight.
                     Kupwad, Dist.-Sangli, Maharashtra- 416436.</p>
                 <div id="iconssym">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fab fa-youtube-square"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-instagram-square"></i>
+                    <a href="https://www.facebook.com/profile.php?id=100063876886966"> <i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/EnnovaTech24"> <i class="fab fa-twitter-square"></i></a>
+                    <a href="https://youtube.com/@ennovatechnology1286?si=DltyPRZSHjJ3qHM1"> <i
+                            class="fab fa-youtube-square"></i></a>
+                    <a href="https://www.linkedin.com/company/ennova-technology/"> <i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/ennova_technology?igsh=MTVieXY2Y29jcDgwaA=="> <i
+                            class="fab fa-instagram-square"></i></a>
+
                 </div>
             </div>
             <!-- <div class="col-md-1"></div> -->

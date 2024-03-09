@@ -4,6 +4,10 @@
   width: 100%;
   position: relative;
 }
+#hero h1{
+  font-family: 'Merriweather', serif;
+
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -19,23 +23,30 @@ body {
 }
 
 .navimagediv1 {
-  height: 3rem;
-  width: 4rem;
+  height: 2.5rem;
+  width: 3.5rem;
 }
 
 .navimagediv2 {
-  height: 4rem;
-  width: 9rem;
+  height: 5rem;
+  width: 10rem;
 }
 
 #header a {
-  color: #434343;
+  /* color: #434343; */
+  color: black;
   font-weight: bold;
   font-size: 1.2rem;
 
 }
 
+.nav-mobile {
+  text-decoration: none;
+}
 
+.nav-mobile:hover {
+  color: black;
+}
 
 .nav-link {
   font-weight: bold;
@@ -79,7 +90,7 @@ body {
 
 .upmargin {
   /* margin-top: 7rem; */
-  padding-top: 7rem;
+  padding-top: 6rem;
 }
 
 .misvispara {
@@ -183,8 +194,8 @@ body {
 
 #contactdiv {
   background-color: rgb(153, 204, 255);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #contactdiv p {
@@ -196,12 +207,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* #contpara{
-  /* width: 25rem; */
-/* margin-right: 5rem; */
-/* padding-right: 10rem; */
-
-
 #iconssym i {
   font-size: 2rem;
   margin-right: 1rem;
@@ -209,10 +214,12 @@ body {
 }
 
 form {
+  margin-left: 53rem !important;
   min-width: 400px;
   max-width: 600px;
   height: 450px;
   padding: 20px;
+  margin-top: 1rem;
   margin: 0 auto;
   background: #ffffff39;
   -webkit-box-shadow: 3px 3px 23px -9px rgba(0, 0, 0, 0.86);
@@ -254,8 +261,10 @@ form button:hover {
 body {
   /* margin-top: 5rem; */
   background: #70e1f5;
-  background: -webkit-linear-gradient(to right, #f1e9de, rgb(153, 204, 255));
-  background: linear-gradient(to right, #ffd194, rgb(153, 204, 255));
+  /* background: -webkit-linear-gradient(to right, #f1e9de, rgb(153, 204, 255)); */
+  /* background: linear-gradient(to right, #ffd194, rgb(153, 204, 255)); */
+  background: linear-gradient(to right, #d4d6d5, rgb(163, 209, 254));
+
 }
 
 .abcd {
@@ -264,10 +273,10 @@ body {
 
 
 #contactform {
-  /* margin-left: 10rem; */
+
   background-image: url('https://uvtechsoft.com/web/cont.png');
-  display: flex;
-  justify-content: right;
+  /* display: flex; */
+  /* justify-content: right; */
   padding-right: 10rem;
   margin-bottom: 5rem;
 
@@ -284,7 +293,13 @@ iframe {
   margin-bottom: 10rem;
 }
 
-
+#header button {
+  height: 2.4rem;
+  background-color: #2073f1;
+  color: white;
+  border-radius: 1rem;
+  width: 7rem;
+}
 
 
 .personimg {
@@ -476,7 +491,7 @@ div.catCard:hover div.lowerCatCard {
 
 
 #choose {
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   margin-bottom: 5rem;
   /* height: 60vh; */
   background: url(https://images.pexels.com/photos/2506947/pexels-photo-2506947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -549,9 +564,9 @@ div.catCard:hover div.lowerCatCard {
   margin-right: 1rem;
 }
 
-#servdiv {
+/* #servdiv {
   margin-bottom: 6rem;
-}
+} */
 
 /* #servdiv img {
   height: 10rem;
@@ -571,6 +586,8 @@ div.catCard:hover div.lowerCatCard {
 .co {
   height: 26rem;
   /* width: 18rem; */
+  padding: 0.1rem;
+
   border-radius: 0.5rem;
   border: #a2a0a0 solid 2px;
 
@@ -603,13 +620,13 @@ div.catCard:hover div.lowerCatCard {
 } */
 
 .coll {
-  height: 18rem;
-  width: 22rem;
-  margin: 0.6rem;
+  /* height: 18rem; */
+  width: 21rem;
+  margin: 0.2rem;
   border-radius: 0.5rem;
 
   padding: 0.5rem;
-  text-align: center;
+  text-align: center !important;
   background-color: #fff;
   box-shadow: -7px 4px 28px -3px rgb(91, 91, 89);
 }
@@ -732,6 +749,11 @@ div.catCard:hover div.lowerCatCard {
   width: 50%;
 }
 
+#iconssym a {
+  text-decoration: none;
+  color: black;
+}
+
 .popup-content p {
   font-size: 17px;
   padding: 10px;
@@ -801,7 +823,94 @@ div.catCard:hover div.lowerCatCard {
   height: 12rem;
 }
 
+.mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 14rem; */
+  width: 100%;
+  height: 27rem;
+  /* background: -webkit-linear-gradient(to right, #f1e9de, rgb(153, 204, 255)); */
+  background: linear-gradient(to right, #fbae4a, rgb(67, 149, 231));
+  display: flex;
+  flex-direction: column;
+  transition: 2s ease-in;
+  -webkit-transition: 2s ease-in;
+}
 
+.mobile a {
+  padding: 1rem;
+  color: white !important;
+}
+
+.mobile a:hover {
+  /* padding: 1rem; */
+  color: rgb(252, 252, 252) !important;
+}
+
+:root {
+  --title-color: #222;
+  /*   --bg-color: #FAF0E6; */
+}
+
+
+h2 {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  row-gap: 10px;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  /* margin-top: 60px; */
+  font-family: 'Merriweather', serif;
+}
+
+h2::before,
+h2::after {
+  width: 100%;
+  height: 3px;
+  background: var(--title-color);
+  content: '';
+  border-radius: 50%;
+}
+
+#scrolbtn{
+  background-color: transparent;
+  font-weight: bold;
+  color: white;
+  height: 2.5rem;
+  width: 10rem;
+  border-radius: 1rem;
+
+}
+#scrolbtn:hover{
+  background-color: white;
+  color: black;
+}
+
+/* #scrolbtn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+#scrolbtn a:hover{
+  color: #000;
+  background-color: rgb(170, 168, 168);
+
+}
+
+#scrolbtn {
+  background-color: transparent;
+  height: 2.5rem;
+  width: 10rem;
+  border-radius: 1rem;
+} */
+
+/* #scrolbtn:hover {
+  background-color: rgb(170, 168, 168);
+ 
+} */
 
 @media screen and (max-width:426px) {
   /* #header a {
@@ -856,7 +965,7 @@ div.catCard:hover div.lowerCatCard {
     height: 20rem;
 
     /* margin-left: 3rem; */
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 
   }
 
@@ -876,8 +985,10 @@ div.catCard:hover div.lowerCatCard {
 
   #choose {
     height: 100%;
+    margin-top: 5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 
   .productfix {
@@ -955,7 +1066,7 @@ div.catCard:hover div.lowerCatCard {
   }
 
   iframe {
-  
+
     height: 15rem !important;
     width: 23rem !important;
 
@@ -965,12 +1076,12 @@ div.catCard:hover div.lowerCatCard {
   #contactform {
     margin-left: 0;
     padding: 0.5rem;
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
     /* margin-right: 2rem; */
     /* padding-right: 2rem; */
   }
 
- 
+
 
   /* .row {
     margin-left: 0 !important;
@@ -981,8 +1092,8 @@ div.catCard:hover div.lowerCatCard {
 
   .coll {
     height: 16rem;
-    width: 22rem;
-
+    width: 18rem;
+    margin-bottom: 1rem;
   }
 
   .contdivnum {
@@ -1024,11 +1135,10 @@ div.catCard:hover div.lowerCatCard {
   }
 
   form {
-    min-width: 350px;
-    max-width: 550px;
-    height: 450px;
-    /* padding: 5px; */
-
+    /* min-width: 285px;
+    height: 450px; */
+    margin-left: 0rem !important;
+    margin-right: 0.5rem;
   }
 
   /* #contactdiv .row{
@@ -1053,7 +1163,7 @@ div.catCard:hover div.lowerCatCard {
 
   .welcomediv {
     height: 44rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
 
   #ourfocusdiv p {
@@ -1068,12 +1178,18 @@ div.catCard:hover div.lowerCatCard {
 
 
 @media screen and (max-width:769px) {
+
   /* #About img {
     height: 15rem;
   } */
+  #myTopnav {
+    display: none !important;
+  }
+
   iframe {
     height: 25rem;
     width: 45rem;
+    margin-bottom: 2rem;
   }
 
   .classcontact {
@@ -1082,10 +1198,7 @@ div.catCard:hover div.lowerCatCard {
     /* flex-direction: column; */
   }
 
-  #header a {
-    display: none;
 
-  }
 
   #header i {
     display: flex !important;
@@ -1097,15 +1210,37 @@ div.catCard:hover div.lowerCatCard {
   #imgheading {
     margin: 0;
     margin-top: 2rem;
+    padding: 1rem;
   }
 
   .missionimg {
     display: none;
   }
-  /* #contactdiv {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  } */
+
+  .iohight {
+    height: 23rem !important;
+  }
+
+  form {
+    min-width: 285px;
+    max-width: 329px;
+    height: 450px;
+    margin-left: 23rem !important;
+  }
+
+  #contactform {
+    padding-right: 0rem;
+    background: none;
+  }
+
+  #contactmap {
+    padding-top: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  #missionvidiv {
+    margin-bottom: 2rem;
+  }
 }
 
 
@@ -1120,30 +1255,49 @@ div.catCard:hover div.lowerCatCard {
   }
 
   form {
-    min-width: 315px;
-
+    min-width: 301px;
     height: 450px;
-
-
+    margin-right: 0.5rem;
+    margin-left: 0rem !important;
   }
 }
 
 @media screen and (max-width:321px) {
   iframe {
-    
+
     height: 15rem !important;
     width: 17rem !important;
 
   }
+
+  /* 
+  form {
+    min-width: 285px;
+    height: 450px;
+    margin-left: 0rem !important;
+  } */
+
   #contactmap {
-     margin-bottom: 5rem;
-    
+    margin-bottom: 5rem;
+
   }
-  #contactmap div p{
+
+  #contactmap div p {
     font-size: 0.7em;
   }
-  #imgheading h1{
+
+  #imgheading h1 {
     font-size: 2.4rem !important;
+  }
+
+  #contactdiv .row>* {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+
+  .iohight {
+    margin-bottom: 1.5rem;
+
   }
 }
 
@@ -1155,6 +1309,13 @@ div.catCard:hover div.lowerCatCard {
     height: 25rem;
     width: 29rem;
   }
-  
+
+  form {
+    margin-left: 33rem !important;
+  }
+
+  #myTopnav a {
+    font-size: medium;
+  }
 
 }
