@@ -21,65 +21,45 @@
 </head>
 
 <body>
-
-    <nav id="header" class="topnav d-flex align-items-center justify-content-between container-fluid ">
-
-        <div>
-            <img class="navimagediv1" src="./logo.jpg" alt="">
-
-            <a class="  nav-link-ltr" href="./index.html"><img class="navimagediv2" src="./logoe.png" alt=""></a>
-
-        </div>
-
-        <div class="d-flex navbara" id="myTopnav">
-
-            <a class="nav-link nav-link-ltr" href="./about.html">ABOUT US</a>
-            <a class="nav-link nav-link-ltr" href="./servicec.html">OUR SERVICES</a>
-            <a class="nav-link nav-link-ltr" href="./products.html">OUR PRODUCT</a>
-            <a class="nav-link nav-link-ltr" href="./Contact.html">CONTACT</a>
-            <a href="tel:+919772911543" class="fw-bold m-3 btn btn-primary text-light ">Call Now</a>
-
-        </div>
-
-        <i id="baricon" class="fa-solid fa-bars" onclick="handleMenu()"></i>
-
-        <div class="mobile">
-            <div class="d-flex justify-content-between ">
-                <img class="navimagediv2" src="./logoe.png" alt="">
-                <a href="tel:+919772911543" class="fw-bold m-3  btn btn-primary  text-light">Call Now</a>
-
-            </div>
-            <div class="d-flex justify-content-end my-3 mx-2">
-                <i class="fa fa-times-circle text-light fs-4" aria-hidden="true" onclick="handleClose()"></i>
-            </div>
-            <a class="nav-mobile nav-link-ltr" href="./index.html">HOME</a>
-            <a class="nav-mobile nav-link-ltr" href="./about.html">ABOUT US</a>
-            <a class="nav-mobile nav-link-ltr" href="./servicec.html">OUR SERVICES</a>
-            <a class="nav-mobile nav-link-ltr" href="./products.html">OUR PRODUCT</a>
-            <a class="nav-mobile nav-link-ltr" href="./Contact.html">CONTACT</a>
-
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">ENNOVA</a>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ITService.html">Our Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Nproduct.html">Our product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
     </nav>
 
-    <!-- <section id="hero">
-        <video id="fullscreen-video" autoplay loop>
-            <source src="./video (2160p).mp4" type="video/mp4">
-        </video>
 
-        <div id="imgheading">
-            <h1>ENNOVA TECHNOLOGY</h1>
-            <h4 class="herosubhead">Your Problem Our Smart Solution</h4>
-        </div>
-    </section> -->
+ 
+
 
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
                 <section id="hero">
                     <video id="fullscreen-video" autoplay loop>
-                        <source src="./video (2160p).mp4" type="video/mp4">
+                        <source src="./Hero/video (2160p).mp4" type="video/mp4">
                     </video>
-            
+
                     <div id="imgheading">
                         <h1>ENNOVA TECHNOLOGY</h1>
                         <h4 class="herosubhead">Your Problem Our Smart Solution</h4>
@@ -88,36 +68,39 @@
             </div>
             <div class="carousel-item" data-bs-interval="2000">
                 <section id="hero">
-                     
-                  <img src="./ioback.jpg" alt="">
-                  <div class="carousel-caption">
-                    <h1 class="animated fadeInRight"> I/O CARD</h1>
-                    <h5 class="animated fadeInRight">Optimize control systems with our Embedded IO Card for seamless integration and peak performance."</h5>
-                    <a href="#"></a><button id="scrolbtn" class="">Learn More</button></a>
-               </div>
+
+                    <img src="./Hero/ioback.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1 class="animated fadeInRight"> I/O CARD</h1>
+                        <h5 class="animated fadeInRight">Optimize control systems with our Embedded IO Card for seamless
+                            integration and peak performance."</h5>
+                        <a href="#"></a><button id="scrolbtn" class="">Learn More</button></a>
+                    </div>
                 </section>
             </div>
             <div class="carousel-item">
                 <section id="hero">
-                     
-                    <img src="./Data analysis.jpg" alt="">
+
+                    <img src="./Hero/Data analysis.jpg" alt="">
                     <div class="carousel-caption">
-                      <h1 class="animated fadeInRight">UP coming Projects</h1>
-                      <h5 class="animated fadeInRight">Stay Tuned for Excellence: A Preview of Our Next Milestone.</h5>
-                      <a href="#"></a><button id="scrolbtn" class="">Learn More</button></a>
-                 </div>
-                  </section>
+                        <h1 class="animated fadeInRight">UP coming Projects</h1>
+                        <h5 class="animated fadeInRight">Stay Tuned for Excellence: A Preview of Our Next Milestone.
+                        </h5>
+                        <a href="#"></a><button id="scrolbtn" class="">Learn More</button></a>
+                    </div>
+                </section>
             </div>
             <div class="carousel-item">
                 <section id="hero">
-                     
-                    <img src="./meeting.png" alt="">
+
+                    <img src="./Hero/meeting.png" alt="">
                     <div class="carousel-caption">
-                      <h1 class="animated fadeInRight">IT Solutions</h1>
-                      <h5 class="animated fadeInRight">"Building Tomorrow's Excellence - Web Design, Software Development, and Data Analytics Initiatives"</h5>
-                      <a href="#"> <button id="scrolbtn" class="">Learn More</button></a>
-                 </div>
-                  </section>
+                        <h1 class="animated fadeInRight">IT Solutions</h1>
+                        <h5 class="animated fadeInRight">"Building Tomorrow's Excellence - Web Design, Software
+                            Development, and Data Analytics Initiatives"</h5>
+                        <a href="#"> <button id="scrolbtn" class="">Learn More</button></a>
+                    </div>
+                </section>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -354,13 +337,11 @@
 
     <footer class="d-flex justify-content-center bg p-3 ">Copyright @2023 Proudly Crafted by Ennova Technology</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
     <script src="./app.js"> </script>
 </body>
 
